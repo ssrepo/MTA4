@@ -128,6 +128,9 @@
                                 <state key="normal" title="Initiate Transfer">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="820-qx-NRd" kind="modal" id="h7G-Lq-k2N"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.43102746837967343" green="0.64965272308906297" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -141,7 +144,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aut-Ze-jzP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-721" y="153"/>
+            <point key="canvasLocation" x="-172" y="509"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0hv-hM-4Zz">
+            <objects>
+                <viewController id="820-qx-NRd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TaB-0z-0OU"/>
+                        <viewControllerLayoutGuide type="bottom" id="b9c-g2-hZn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EJi-tM-fxO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Money Transfer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGC-6q-tks">
+                                <rect key="frame" x="94" y="7" width="163" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99631076388888884" green="0.99631076388888884" blue="0.99631076388888884" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fund Transfer Succesfull !!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZe-z4-oln">
+                                <rect key="frame" x="68" y="122" width="203" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Transaction #1423789892" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXE-eq-jWR">
+                                <rect key="frame" x="58" y="159" width="240" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.98875473484848486" green="0.98875473484848486" blue="0.98875473484848486" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WkC-uR-2MA">
+                                <rect key="frame" x="73" y="218" width="174" height="30"/>
+                                <state key="normal" title="Back To Home Page">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dmE-Kn-TpH" kind="modal" id="4Gx-Ec-s1d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4310274684" green="0.6496527231" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4cO-7w-TkV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-625" y="130"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -149,4 +199,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="4Gx-Ec-s1d"/>
+    </inferredMetricsTieBreakers>
 </document>
